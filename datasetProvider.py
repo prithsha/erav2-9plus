@@ -87,7 +87,7 @@ def get_dataloaders(train_dataset, test_dataset, batch_size = 128, shuffle=True,
     # y would contain the corresponding labels for each image, indicating the actual digit represented in the image 
         print(f"Shape of test_dataloader batch_data [Batch, C, H, W]: {batch_data.shape}")
         print(f"Shape of test_dataloader label (label): {label.shape} {label.dtype}")
-        print(f"Labels for a batch of size {batch_size} are {label}")
+        # print(f"Labels for a batch of size {batch_size} are {label}")
         break
 
     return train_dataloader, test_dataloader
